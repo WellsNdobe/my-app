@@ -1,7 +1,6 @@
-import { Text, View } from "react-native";
 import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
-import { s } from "./indexStyles";
-import { ProfilCard } from "./profileCard";
+import { ProfilCard } from "./components/profileCard";
+import { AgeCounter } from "./components/AgeCounter";
 export default function App() {
   return (
     <SafeAreaProvider>
@@ -12,6 +11,7 @@ export default function App() {
           age={71}
           isOpenToWork={true}
         ></ProfilCard>
+        <AgeCounter />
       </SafeAreaView>
     </SafeAreaProvider>
   );
