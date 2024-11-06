@@ -1,40 +1,45 @@
 import { StyleSheet } from "react-native";
 
-const s = StyleSheet.create({
-    cube:{
-        backgroundColor:"blue",
-        height:100,
-        width:100,
-        borderRadius:50,
+export const s = StyleSheet.create({
+  container: {
+    borderRadius: 10,
+    padding: 20,
+    backgroundColor: "white",
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+    elevation: 5,
+  },
+  avatar: {
+    width: 70,
+    height: 70,
+    borderRadius: 50,
+  },
+  name: {
+    fontSize: 24,
+    fontWeight: "bold",
+    marginBottom: 5,
+  },
+  texts: {
+    flex: 1,
+    paddingLeft: 15,
+  },
+  header: {
+    flexDirection: "row",
+  },
+  social: {
+    padding: 10,
+    justifyContent: "space-evenly",
+    flexDirection: "row",
+  },
 
-    },
-    safeAreaView: {
-        flex: 1,
-        backgroundColor: "#ececec",
-        justifyContent: 'center',  // Centers the content vertically
-        alignItems: 'center', 
-        padding:10,     // Centers the content horizontally
-    },
-    textContainer:{
-        paddingLeft:20,
-    },
-    container: {
-        backgroundColor: "white",
-        padding: 20,
-        marginHorizontal:40,
-        borderRadius: 20,
-        flexDirection:"row"
-    },
-    Title: {
-        fontWeight: "bold",
-        fontSize: 20,
-        color: "black",
-    },
-    description: {
-        flex:1,
-        fontWeight: "300",  
-        fontSize: 14,
-        color: "black",
-    }
+  socialBtn: {
+    borderRadius: 50,
+    padding: 10,
+    backgroundColor: "#eee",
+  },
 });
- export default s;
